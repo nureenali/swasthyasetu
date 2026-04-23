@@ -1,9 +1,13 @@
 import easyocr
 
-reader = easyocr.Reader(['en'])
+reader = easyocr.Reader(['en'], gpu=False)
 
 def run_ocr(image):
-    results = reader.readtext(image)
+    results = reader.readtext(
+        image,
+        detail=1,
+        paragraph=False
+    )
 
     texts = []
     confidences = []

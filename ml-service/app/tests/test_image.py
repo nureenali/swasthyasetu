@@ -1,5 +1,6 @@
 import os
 import csv
+import time
 from app.services.visual_intelligence.pipeline import process_medicine_image
 
 image_folder = "data/sample_images"
@@ -21,7 +22,13 @@ rows = []
 for file_name in os.listdir(image_folder):
     if file_name.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
         image_path = os.path.join(image_folder, file_name)
+
+        start = time.time()
         result = process_medicine_image(image_path)
+        end = time.time()
+
+        time_taken = round(end - start, 2)
+        print(f"{file_name} -> {time_taken} sec")
 
         expected = expected_data.get(file_name, {})
         expected_medicine = expected.get("expected_medicine", "")
@@ -50,7 +57,8 @@ for file_name in os.listdir(image_folder):
             "confidence": confidence,
             "error": error,
             "manual_input_required": manual_input_required,
-            "status": status
+            "status": status,
+            "time_taken_sec": time_taken
         })
 
 with open(output_file, "w", newline="", encoding="utf-8") as f:
@@ -65,7 +73,8 @@ with open(output_file, "w", newline="", encoding="utf-8") as f:
             "confidence",
             "error",
             "manual_input_required",
-            "status"
+            "status",
+            "time_taken_sec"
         ]
     )
     writer.writeheader()

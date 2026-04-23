@@ -1,18 +1,18 @@
-filename,expected_medicine,predicted_medicine,expected_dosage,predicted_dosage,confidence,error,manual_input_required,status
-amlodipine.jpeg,amlodipine,amlodipine,10 mg,,0.5645847591920662,,True,wrong_or_missing_dosage
-aspirin.jpeg,aspirin,aspirin,,,0.3761048357896027,,True,manual_input_needed
-cisplatin.jpeg,cisplatin,cisplat,100 mg,,0.18460538817194275,,True,wrong_medicine
-clotrimazole.jpeg,clotrimazole,trlma,50 g,50g,0.48741401381987715,,False,wrong_medicine
-enalapril.jpeg,enalapril,enalapril,5 mg,,0.45647308378629475,,True,wrong_or_missing_dosage
-ibuprofen.jpeg,ibuprofen,ibuprofen,400 mg,,0.46549799243303225,,True,wrong_or_missing_dosage
-loperamide.jpeg,loperamide,loperamide,2 mg,2mg,0.7296840583786235,,False,wrong_or_missing_dosage
-loratadine.jpeg,loratadine,ydilc,10 mg,,0.3054209541539593,,True,wrong_medicine
-metformin.jpeg,metformin,prolonged,,,0.7109950061458765,,True,wrong_medicine
-metoprolol.jpeg,metoprolol,metoprolol,,,0.4656077421876383,,True,manual_input_needed
-pantoprazole.jpeg,pantoprazole,pantoprazole,40 mg,,0.6604256820321617,,True,wrong_or_missing_dosage
-paracetamol.jpeg,paracetamol,clc,650 mg,,0.39242406103698113,,True,wrong_medicine
-pirfenidone.jpeg,perfenidone,pirfenidone,267 mg,267 mg,0.934598399042887,,False,wrong_medicine
-rifampicin.jpeg,rifampicin,rifampici,150 mg,,0.6691454295388981,,True,wrong_medicine
-rosuvastatin.jpeg,rosuvastatin,rosivastatin,5 mg,5 mg,0.8078096812847022,,False,wrong_medicine
-tacrolimus.jpeg,tacrolimus,tacrolimus,20 g,,0.49104045670921587,,True,wrong_or_missing_dosage
-vancomycin.jpeg,vancomycin,vancomvei,1 g,,0.36959452092856404,,True,wrong_medicine
+filename,expected_medicine,predicted_medicine,expected_dosage,predicted_dosage,confidence,error,manual_input_required,status,time_taken_sec
+amlodipine.jpeg,amlodipine,amlodipine,10 mg,10 mg,0.6256071026465875,,False,correct,1.39
+aspirin.jpeg,aspirin,aspirin,,500 mg,0.7455276051341968,,False,correct,0.95
+cisplatin.jpeg,cisplatin,cisplatin,100 mg,100 mg,0.7297325290057506,,False,correct,0.53
+clotrimazole.jpeg,clotrimazole,clotrimazole,50 g,50 g,0.6234883097842076,,False,correct,1.1
+enalapril.jpeg,enalapril,enalapril,5 mg,,0.5068413124176234,,True,wrong_or_missing_dosage,0.18
+ibuprofen.jpeg,ibuprofen,ibuprofen,400 mg,400 mg,0.6416499380703999,,False,correct,0.82
+loperamide.jpeg,loperamide,loperamide,2 mg,2 mg,0.8753140974608614,,False,correct,0.29
+loratadine.jpeg,loratadine,loratadine,10 mg,,0.49166000285813416,,True,wrong_or_missing_dosage,1.0
+metformin.jpeg,metformin,hydrochloride,,,0.5953350958023068,,True,wrong_medicine,0.6
+metoprolol.jpeg,metoprolol,metoprolol,,,0.9621194990380363,,True,manual_input_needed,0.67
+pantoprazole.jpeg,pantoprazole,pantoprazole,40 mg,,0.7811074362817138,,True,wrong_or_missing_dosage,0.34
+paracetamol.jpeg,paracetamol,paracetamol,650 mg,650 mg,0.4226486616986094,,False,correct,2.79
+pirfenidone.jpeg,perfenidone,pirfenidone,267 mg,267 mg,0.948528378032423,,False,wrong_medicine,0.48
+rifampicin.jpeg,rifampicin,rifampicin,150 mg,,0.8668334445440988,,True,wrong_or_missing_dosage,0.79
+rosuvastatin.jpeg,rosuvastatin,rosivastatin,5 mg,5 mg,0.7214452952460965,,False,wrong_medicine,0.21
+tacrolimus.jpeg,tacrolimus,tacrolimus,20 g,20 g,0.7737979067019164,,False,correct,0.97
+vancomycin.jpeg,vancomycin,vancomycin,1 g,,0.5096551893097315,,True,wrong_or_missing_dosage,0.52
