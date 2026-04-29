@@ -1,0 +1,5 @@
+processing_time_seconds,filename,report_type,gender,test_name,value,unit,status,normal_range,message,alerts
+5.1,samplecbc.jpeg,CBC,male,hemoglobin,13.0,,Borderline Low,13.2-16.6 g/dL,hemoglobin is slightly below normal range but close to acceptable range.,hemoglobin is Borderline Low; platelets is Low
+5.1,samplecbc.jpeg,CBC,male,rbc,5.0,,Normal,4.5-5.9 million/cumm,rbc is within the normal range.,hemoglobin is Borderline Low; platelets is Low
+5.1,samplecbc.jpeg,CBC,male,wbc,10000.0,,Normal,4000-11000 cells/cumm,wbc is within the normal range.,hemoglobin is Borderline Low; platelets is Low
+5.1,samplecbc.jpeg,CBC,male,platelets,20000.0,,Low,150000-410000 cells/cumm,platelets is lower than the normal range.,hemoglobin is Borderline Low; platelets is Low
