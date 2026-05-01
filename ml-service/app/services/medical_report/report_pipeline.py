@@ -39,7 +39,7 @@ def save_report_result(image_path, processing_time, report_type, gender, tests, 
 
     file_exists = os.path.exists(file_path)
 
-    with open(file_path, mode="w", newline="", encoding="utf-8") as file:
+    with open(file_path, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
 
         if not file_exists:
