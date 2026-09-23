@@ -281,7 +281,6 @@ def process_health_text(text: str, user_id: str = "default_user") -> TextRouteRe
         return TextRouteResponseSchema(success=True, data=result)
 
     except Exception as exc:
-    except Exception as exc: 
         return _build_failed_response(
             original_text=original_text,
             cleaned_text=cleaned_text,

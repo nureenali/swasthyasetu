@@ -1,12 +1,6 @@
 from fastapi import FastAPI
 from app.api.router import api_router
 
-app = FastAPI()
-
-app.include_router(api_router)
-
-from app.api.router import api_router
-
 app = FastAPI(
     title="SwasthyaSetu ML Service",
     description="ML service for smart health text understanding and structured extraction",
